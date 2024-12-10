@@ -70,6 +70,21 @@ document.getElementById('add-task-btn').addEventListener('click', function() {
       passwordInput.value = '';
     }
   });
+//Password Visibility Toggle
+  const passwordInput = document.getElementById('password-input');
+  const togglePasswordVisibilityIcon = document.getElementById('toggle-password-visibility');
+
+  togglePasswordVisibilityIcon.addEventListener('click', function () {
+    if (passwordInput.type === 'password') {
+      passwordInput.type = 'text';
+      togglePasswordVisibilityIcon.classList.remove('fa-eye');
+      togglePasswordVisibilityIcon.classList.add('fa-eye-slash');
+    } else {
+      passwordInput.type = 'password';
+      togglePasswordVisibilityIcon.classList.remove('fa-eye-slash');
+      togglePasswordVisibilityIcon.classList.add('fa-eye');
+    }
+  });
 
   // You can later add functionality for fetching weather from an API, etc.
    
