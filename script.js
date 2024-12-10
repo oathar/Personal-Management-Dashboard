@@ -54,6 +54,23 @@ document.getElementById('add-task-btn').addEventListener('click', function() {
     }
   });
   
+  document.getElementById('add-password-btn').addEventListener('click', function() {
+    const websiteInput = document.getElementById('website-input');
+    const usernameInput = document.getElementById('username-input');
+    const passwordInput = document.getElementById('password-input');
+    const passwordList = document.getElementById('password-list');
+
+    if (websiteInput.value.trim() !== "" && usernameInput.value.trim() !== "" && passwordInput.value.trim() !== "") {
+      const newPasswordItem = document.createElement('li');
+      newPasswordItem.textContent = `Website: ${websiteInput.value}, Username: ${usernameInput.value}, Password: ${passwordInput.value}`;
+      passwordList.appendChild(newPasswordItem);
+      
+      websiteInput.value = '';
+      usernameInput.value = '';
+      passwordInput.value = '';
+    }
+  });
+
   // You can later add functionality for fetching weather from an API, etc.
    
   // delete button functionality
