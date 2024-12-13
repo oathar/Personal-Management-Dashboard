@@ -14,7 +14,7 @@ By participating in this project, you agree to abide by the following Code of Co
   - Example: `Fixes issue with incorrect date format in the user profile`.
 
 - **Do test your changes**.  
-  Run tests and ensure your code does not break existing functionality. 
+  (Optional)Run tests and ensure your code does not break existing functionality. 
 
 - **Do ask for help when needed**.  
   If you're uncertain about any aspect of the code or contribution process, ask! We’re happy to assist.
