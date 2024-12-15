@@ -96,7 +96,7 @@ document.getElementById('add-task-btn').addEventListener('click', function() {
   }
 
 const passwordInput = document.getElementById('password-input');
-const togglePasswordVisibilityIcon = document.getElementById('toggle-password-visibility');
+const togglePasswordVisibilityIcon = document.querySelector('[data-toggle-password]');
 togglePasswordVisibilityIcon.addEventListener('click', function () {
   if (passwordInput.type === 'password') {
     passwordInput.type = 'text';
