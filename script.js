@@ -94,8 +94,6 @@ document.getElementById('add-task-btn').addEventListener('click', function() {
       }
     });
   }
-  
-  // Password Visibility Toggle
 const passwordInput = document.getElementById('password-input');
 const togglePasswordVisibilityIcon = document.getElementById('toggle-password-visibility');
 togglePasswordVisibilityIcon.addEventListener('click', function () {
